@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head img {
+        width: 100%;
+        object-fit: cover;
+
+
+    }
+
+    .body img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .col-1 {
+        width: 70%;
+    }
+
+    .col-2 {
+        width: 40%
+    }
+
+    .head {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        font-size: 30px;
+
+    }
+
+    .headitem {
+        font-size: 100%;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10%;
+        background-color: rgba(250, 213, 3, 0.6);
+        display:flex;
+    }
+
+    .body {
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: 30px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .bodyitem {
+        background-color: aqua;
+        position: relative;
+
+    }
+
+    .bodyitem1 {
+        width: 100%;
+    }
+
+    .bodyitem2 {
+        width: 100%;
+    }
+
+
+
+    @media only screen and (max-width: 768px){
+        [class*="col-"]{Width:100%;}
+    }
+   
+</style>
+
+<body>
+    <div class="head">
+        <img src="./Hinhanh/beach3.jpg">
+        <pre class="headitem col-1">4 Good reasons 
+For travelling with us</pre>
+    </div>
+
+    <div class="body">
+        <div class="bodyitem col-2">
+            <div class="bodyitem1"><img src="./Hinhanh/cellphone.jpg"></div>
+            <div class="bodyitem2">
+                <h4>Smart Vacation</h4>
+                <p>Full vacation control from your cell phone</p>
+            </div>
+        </div>
+
+        <div class="bodyitem col-2">
+            <div class="bodyitem1"><img src="./Hinhanh/sealions.jpg"></div>
+            <div class="bodyitem2">
+                <h4>Super Offers</h4>
+                <p>Up to 50% offers.Always 25% student offers</p>
+            </div>
+        </div>
+
+        <div class="bodyitem col-2">
+            <div class="bodyitem1"><img src="./Hinhanh/truck.jpg"></div>
+            <div class="bodyitem2">
+                <h4>Car Rental Included</h4>
+                <p>Wherever you travel our car rental is included.</p>
+            </div>
+        </div>
+
+        <div class="bodyitem col-2">
+            <div class="bodyitem1"><img src="./Hinhanh/nowornever.jpg"></div>
+            <div class="bodyitem2">
+                <h4>Realize Your Dream</h4>
+                <p>Don't wait until it is to late.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
